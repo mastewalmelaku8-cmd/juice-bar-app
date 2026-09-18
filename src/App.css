@@ -1,0 +1,111 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Utilities */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: #0066ff;
+  color: white;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background-color: #e8e8e8;
+  color: #333;
+  padding: 8px 16px;
+  font-weight: 500;
+  border: 0.5px solid #ddd;
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border: 0.5px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card-elevated {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input, textarea {
+  font-family: inherit;
+  padding: 10px;
+  border: 0.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
